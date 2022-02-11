@@ -109,11 +109,13 @@ a.button_link:hover::before{
     list-style: none;
     background-color: #fff;
     display: flex;
+    justify-content: center;
   }
   .header li a.link_menu {
     display: block;
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
+    border-left: 1px solid #f4f4f4;
     text-decoration: none;
   }
   a.link_menu:hover{
