@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-/*font-family: 'Open Sans', sans-serif;*/
+
 
 *{
-    margin:0;
-    padding: 0;
     border: 0;
     font-family: 'Open Sans', sans-serif;
     color: #53585C;
@@ -11,7 +9,8 @@
 body{
     width: 100%;
     background-color: #E5EFF6;
-    margin: 20px auto;
+    /*margin: 20px auto;*/
+    margin: 0;
 }
 section {
     margin: auto;
@@ -20,6 +19,8 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1.5rem;
+    position: relative;
+    top: 80px;
 }
 article {
     padding: 10px;
@@ -52,23 +53,79 @@ button{
     border-radius: 5rem;
     transition: 0.5s ease-out;
     font-size: 0.8rem;
+    cursor: pointer;
     pointer-events: auto;
+    font-weight: 700;
 }
 button:hover{
     background: #4AAAF4;
     color: #FFFFFF;
     box-shadow: -5px 16px 13px -4px rgba(0,0,0,0.62);
 }
-a {
+a.button_link {
     pointer-events: none;
-    border-top: 2px solid #BCCCDF;
     text-decoration: none;
     padding-top: 20px;
+    position: relative;
 }
-a:hover{
+a.button_link:hover{
     border-top: none;
+}
+a.button_link::before{
+    content: "";
+    display: flex;
+    width: 50px;
+    height: 2px;
+    background-color: #9C9FA4;
+    top: 0%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+a.button_link:hover::before{
+    display: none;
 }
 .title{
     display: flex;
     flex-grow: 1;
 }
+/*-------------------------------------------- MENU --------------------------------*/
+  a.link_menu {
+    color: #53585C;
+    font-weight: 700;
+  }
+  
+  /* header */
+  
+  .header {
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    display: flex;
+  }
+  .header li a.link_menu {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  a.link_menu:hover{
+      background-color: #4AAAF4;
+      color: #fff;
+  }
+
+  
+/*------------------------------------ END MENU -----------------------------------*/  
+@media screen and (max-width: 800px) {
+    article{  
+    margin: 1%;
+    }
+  }
