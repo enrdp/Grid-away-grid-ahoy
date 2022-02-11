@@ -1,1 +1,1 @@
-# Grid-away-grid-ahoy!
+# grid-away-grid-ahoy

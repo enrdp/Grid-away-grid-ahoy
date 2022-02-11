@@ -1,50 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
 
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #53585C;
+}
 body{
-    background-color: lightgray;
-    width: 80%;
-    margin: 10px auto;
+    width: 100%;
+    background-color: #E5EFF6;
+    margin: 20px auto;
 }
-img{
-    width: 70px;
-    height: 70px;
-    margin: 10px auto;
-}
-div.container{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 30px 30px;
-}
-div.grid_item{
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: white;
-    display: grid;
-}
-h1{
-    font-size: 13px;
+section {
     margin: auto;
-    border: 1px solid black;
+    padding: 1rem;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+article {
+    padding: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0.4rem;
+    box-shadow: 0.3em 0.3rem 0.3rem #E0E6EC;
+    transition: 0.5s ease-out, 0.2s ease-in;
+}
+article:hover{
+    box-shadow: -0.5rem 1.5rem 3rem #BCCCDF;
+    transform: scale(1.1);
+}
+h2, p{
+    margin : 0.3rem auto;
+}
+h2{
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 p{
-    font-size: 10px;
-    margin: auto;
-    border: 1px solid black;
+    font-size: 0.9rem;
 }
-a.button{
+button{
+    margin: 1.5rem auto;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5rem;
+    transition: 0.5s ease-out;
+    font-size: 0.8rem;
+    pointer-events: auto;
+}
+button:hover{
+    background: #4AAAF4;
+    color: #FFFFFF;
+    box-shadow: -5px 16px 13px -4px rgba(0,0,0,0.62);
+}
+a {
+    pointer-events: none;
+    border-top: 2px solid #BCCCDF;
     text-decoration: none;
-    color: gray;
-    font-size: 10px;
-    border: 1px solid black;
-    font-weight: 700;
-    margin: 40px auto;
-    padding: 10px;
-    width: fit-content;
+    padding-top: 20px;
 }
-a.button:hover{
-    color: white;
-    background-color: blue;
-    border-radius: 25px;
+a:hover{
+    border-top: none;
 }
