@@ -1,9 +1,4 @@
 
-*{
-    border: 0;
-    font-family: 'Open Sans', sans-serif;
-    color: #53585C;
-}
 body{
     width: 100%;
     background-color: #E5EFF6;
@@ -36,6 +31,7 @@ article.card:hover{
 h2, p{
     margin : 0.3rem auto;
     font-family: 'Open Sans', sans-serif;
+    color: #53585C;
 }
 h2{
     font-size: 1.1rem;
@@ -55,6 +51,8 @@ button{
     cursor: pointer;
     pointer-events: auto;
     font-weight: 700;
+    color: #53585C;
+    border: 0;
 }
 button:hover{
     background: #4AAAF4;
@@ -98,6 +96,7 @@ a.button_link:hover::before{
   /* header */
   
   .header {
+    font-family: 'Open Sans', sans-serif;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
     width: 100%;
