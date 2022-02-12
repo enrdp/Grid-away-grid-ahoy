@@ -11,7 +11,7 @@ body{
     /*margin: 20px auto;*/
     margin: 0;
 }
-section {
+section.container {
     margin: auto;
     padding: 1rem;
     max-width: 1200px;
@@ -21,7 +21,7 @@ section {
     position: relative;
     top: 80px;
 }
-article {
+article.card {
     padding: 10px;
     background-color: #FFFFFF;
     display: flex;
@@ -31,7 +31,7 @@ article {
     box-shadow: 0.3em 0.3rem 0.3rem #E0E6EC;
     transition: 0.5s ease-out, 0.2s ease-in;
 }
-article:hover{
+article.card:hover{
     box-shadow: -0.5rem 1.5rem 3rem #BCCCDF;
     transform: scale(1.1);
 }
@@ -85,7 +85,7 @@ a.button_link::before{
 a.button_link:hover::before{
     display: none;
 }
-.title{
+.card_title{
     display: flex;
     flex-grow: 1;
 }
