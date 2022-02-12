@@ -89,10 +89,6 @@ a.button_link:hover::before{
     display: flex;
     flex-grow: 1;
 }
-.card_paragraph{
-    display: flex;
-    flex-grow: 1;
-}
 /*-------------------------------------------- MENU --------------------------------*/
   a.link_menu {
     color: #53585C;
