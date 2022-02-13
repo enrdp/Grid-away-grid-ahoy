@@ -5,9 +5,9 @@ body{
     margin: 0;
 }
 section.container {
-    margin: auto;
+    margin: auto auto 100px auto;
     padding: 1rem;
-    max-width: 1200px;
+    max-width: 90%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1.5rem;
@@ -48,40 +48,31 @@ button{
     border-radius: 5rem;
     transition: 0.5s ease-out;
     font-size: 0.8rem;
-    cursor: pointer;
-    pointer-events: auto;
     font-weight: 700;
     color: #53585C;
     border: 0;
+    cursor: pointer;
 }
+.button_container{
+    position: relative;
+}
+.border_hidden{
+    position: absolute;
+    border-top: 2px solid #9C9FA4;
+    width: 45px;
+    top: 15%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);    
+}
+
 button:hover{
     background: #4AAAF4;
     color: #FFFFFF;
     box-shadow: -5px 16px 13px -4px rgba(0,0,0,0.62);
 }
-a.button_link {
-    pointer-events: none;
-    text-decoration: none;
-    padding-top: 20px;
-    position: relative;
-}
-a.button_link:hover{
+a.button_link:hover .border_hidden{
     border-top: none;
-}
-a.button_link::before{
-    content: "";
-    display: flex;
-    width: 50px;
-    height: 2px;
-    background-color: #9C9FA4;
-    top: 0%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-a.button_link:hover::before{
-    display: none;
 }
 .card_title{
     display: flex;
@@ -121,12 +112,6 @@ a.button_link:hover::before{
       background-color: #4AAAF4;
       color: #fff;
   }
-
-  
 /*------------------------------------ END MENU -----------------------------------*/  
-@media screen and (max-width: 800px) {
-    article{  
-    margin: 1%;
-    }
-  }
+
 
